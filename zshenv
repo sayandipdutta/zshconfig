@@ -3,6 +3,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/src
 export PATH=$PATH:/snap/bin
 export NVIM_REMOTE=127.0.0.1:9681
 

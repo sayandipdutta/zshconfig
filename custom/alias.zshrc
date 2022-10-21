@@ -21,7 +21,7 @@ alias le='exa --header --long --git --icons'
 alias open=explorer.exe
 alias lynx='lynx -lss ~/.config/lynx/lynx.lss'
 
-alias zshconfig="e ~/.config/zsh/*"
+alias zshconfig="e ~/.config/zsh/**/*"
 # alias ohmyzsh="e ~/.oh-my-zsh"
 alias nvimconf="e ~/.config/nvim/{init.lua,lua/user/{whichkey.lua,options.lua,keymaps.lua,lsp/init.lua,telescope.lua}}"
 alias tmuxconf="e ~/.tmux.conf"

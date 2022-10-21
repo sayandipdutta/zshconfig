@@ -29,6 +29,7 @@ function cpptake() {
 function cargotake() {
     cargo new "$1"
     cd "$1"
+    nvim src/main.rs
 }
 
 # Create a venv

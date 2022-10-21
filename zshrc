@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 # Set system variables (EXPORT)s
-source ~/.config/zsh/exports.zshrc 
+source ~/.config/zsh/custom/exports.zshrc 
 
 # If you come from bash you might have to change your $PATH.
 # Path to your oh-my-zsh installation.
@@ -149,10 +149,10 @@ VI_MODE_SET_CURSOR=false
 # Other files to source are ~/.zshenv ~/.zprofile ~/.zlogin
 
 # Alias -> Configuration for different alias
-source $HOME/.config/zsh/alias.zshrc
-source $HOME/.config/zsh/functions.zshrc
-source $HOME/.config/zsh/keymaps.zshrc
-source $HOME/.config/zsh/shortcuts.zshrc
+source $HOME/.config/zsh/custom/alias.zshrc
+source $HOME/.config/zsh/custom/functions.zshrc
+source $HOME/.config/zsh/custom/keymaps.zshrc
+source $HOME/.config/zsh/custom/shortcuts.zshrc
 # Local settings
-source $HOME/.config/zsh/.local_env.zshrc
+source $HOME/.config/zsh/custom/.local_env.zshrc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
