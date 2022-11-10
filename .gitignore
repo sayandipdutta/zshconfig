@@ -1,1 +1,3 @@
 .local_env.zshrc
+.backup
+.backup/*
