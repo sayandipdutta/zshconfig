@@ -1,7 +1,7 @@
 # Alias (alias)
 
 # alias nvim="nvim --listen /tmp/nvim.pipe"
-alias e="nvim --listen $NVIM_REMOTE"
+alias e="nvim --listen /tmp/nvim_${RANDOM}.sock"
 
 alias ra="ranger"
 alias pip="python3 -m pip "
