@@ -5,8 +5,8 @@ alias e="nvim --listen /tmp/nvim_${RANDOM}.sock"
 
 alias ra="ranger"
 alias pip="python3 -m pip "
-# alias ls="ranger"
-#alias vim="nvim"
+alias lr="ranger"
+# alias vim="nvim"
 alias open="wslview"
 alias reload='source ~/.zshrc'
 # alias e=$EDITOR
