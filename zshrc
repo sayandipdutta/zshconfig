@@ -89,6 +89,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  autojump
   docker
   git
   fzf
@@ -156,3 +157,4 @@ source $HOME/.config/zsh/custom/shortcuts.zshrc
 # Local settings
 source $HOME/.config/zsh/custom/.local_env.zshrc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/autojump/autojump.sh
