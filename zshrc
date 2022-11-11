@@ -8,16 +8,6 @@ source ~/.config/zsh/custom/exports.zshrc
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
-ENABLE_CORRECTION="true"
-
-COMPLETION_WAITING_DOTS="true"
-
-# Change autosuggest highlight style
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0000ff,bg=cyan,underline"
-
 plugins=(
   autojump
   docker
@@ -31,10 +21,18 @@ plugins=(
   # viper-env
 )
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+# Change autosuggest highlight style
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0000ff,bg=cyan,underline"
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 ZSH_TMUX_DEFAULT_SESSION_NAME="sayan"
 ZSH_TMUX_UNICODE=true
+# don't change cursor style in vi mode
+VI_MODE_SET_CURSOR=false
 
 # source ~/.profile
 source $ZSH/oh-my-zsh.sh
@@ -42,21 +40,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-VI_MODE_SET_CURSOR=false
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Other files to source are ~/.zshenv ~/.zprofile ~/.zlogin
 
 # Alias -> Configuration for different alias
 source $HOME/.config/zsh/custom/alias.zshrc
