@@ -1,0 +1,4 @@
+tmux rename-window "$*"
+command ssh "$@"
+tmux setw automatic-rename
+

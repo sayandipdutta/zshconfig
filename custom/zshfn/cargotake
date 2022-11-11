@@ -1,0 +1,4 @@
+# Create cargo project structure and move inside
+cargo new "$1"
+cd "$1"
+nvim src/main.rs

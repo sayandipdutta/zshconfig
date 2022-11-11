@@ -1,0 +1,3 @@
+settitle "$*"
+command ssh "$@"
+settitle "bash"

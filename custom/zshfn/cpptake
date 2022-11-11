@@ -1,0 +1,9 @@
+# Create cpp project structure
+mkdir -p "$1"
+mkdir -p "${1}/src"
+mkdir -p "${1}/build"
+cd "$1"
+cp ~/.config/nvim/templates/skeleton.cmakelist CMakeLists.txt
+stem=`echo $1 | awk -F/ '{print $NF}'`
+sed -i "s/@@@@@@/"$stem"/g" CMakeLists.txt
+nvim src/main.cpp
