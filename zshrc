@@ -67,3 +67,7 @@ source $HOME/.config/zsh/custom/shortcuts.zshrc
 source $HOME/.config/zsh/custom/.local_env.zshrc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/autojump/autojump.sh
+
+# INFO:  https://zsh.sourceforge.io/Intro/intro_4.html#SEC4
+fpath=( ~/.config/zsh/custom/zshfn "${fpath[@]}" )
+autoload -Uz cargotake confs cpptake hashcwd ranger ranger_cd tssh zssh
