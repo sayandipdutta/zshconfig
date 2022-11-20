@@ -32,6 +32,6 @@ function automatically_activate_python_env() {
   fi
 }
 
-autoload -Uz add-zsh-hook
-# add-zsh-hook precmd automatically_activate_python_venv
-precmd_functions+=(automatically_activate_python_env)
+# autoload -Uz add-zsh-hook
+# # add-zsh-hook precmd automatically_activate_python_venv
+# precmd_functions+=(automatically_activate_python_env)
