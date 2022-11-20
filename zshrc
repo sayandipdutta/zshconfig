@@ -1,8 +1,10 @@
+# zmodload zsh/zprof 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -13,6 +15,13 @@ source ~/.config/zsh/custom/exports.zshrc
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="powerlevel10k/powerlevel10k"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+# Change autosuggest highlight style
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0000ff,bg=cyan,underline"
+
 plugins=(
   autojump
   docker
@@ -23,15 +32,13 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   tmux
+  keychain
+  gpg-agent
+  # pyenv
   # viper-env
 )
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-ENABLE_CORRECTION="true"
-COMPLETION_WAITING_DOTS="true"
-# Change autosuggest highlight style
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0000ff,bg=cyan,underline"
+
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 ZSH_TMUX_DEFAULT_SESSION_NAME="sayan"
@@ -60,5 +67,12 @@ source $HOME/.config/zsh/custom/.local_env.zshrc
 source /usr/share/autojump/autojump.sh
 
 # INFO:  https://zsh.sourceforge.io/Intro/intro_4.html#SEC4
-fpath=( ~/.config/zsh/custom/zshfn "${fpath[@]}" )
 autoload -Uz cargotake confs cpptake hashcwd ranger ranger_cd tssh zssh
+
+# Restart your shell for the changes to take effect.
+
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
+# zprof
