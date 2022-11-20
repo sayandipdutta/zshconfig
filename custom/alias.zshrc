@@ -13,10 +13,12 @@ alias reload='source ~/.zshrc'
 alias -s py=python3
 alias -s txt=nvim
 alias -s rs=nvim
+alias -s md=glow
 alias code=code-insiders
 alias emacs="emacs -nw"
 
-alias le='exa --header --long --git --icons'
+alias ls='exa'
+alias ols='/usr/bin/ls'
 # alias open=wslview
 alias open=explorer.exe
 alias lynx='lynx -lss ~/.config/lynx/lynx.lss'
