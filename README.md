@@ -3,6 +3,7 @@
 This is my personal zsh config.
 
 ---
+Symlink `zshrc`. `zshenv`, `zprofile`, `zlogin` to `~/.zshrc`, `~/.zshenv`, `~/.zprofile`, `~/.zlogin` respectively. If `$ZDOTDIR` is set, link accordingly.
 
 ## Sections
 ### 1. zshenv
