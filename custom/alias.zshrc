@@ -9,6 +9,8 @@ alias lr="ranger"
 # alias vim="nvim"
 alias open="wslview"
 alias reload='source ~/.zshrc'
+# complementary to clip.exe
+alias paste.exe="powershell.exe Get-Clipboard | perl -p -e 's/\r\n$/\n/'"
 # alias e=$EDITOR
 alias -s py=python3
 alias -s txt=nvim
